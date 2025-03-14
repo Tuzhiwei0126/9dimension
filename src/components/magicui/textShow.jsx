@@ -5,7 +5,7 @@ import { TextAnimate } from "./text-animate";
 export function TextAnimateDemo9() {
   return (
     <TextAnimate
-    className="text-4xl font-bold flex justify-center items-center h-full z-10"
+    className="text-6xl font-bold flex justify-center items-center h-full z-10"
       variants={{
         hidden: {
           opacity: 0,
@@ -52,7 +52,7 @@ export function TextAnimateDemo9() {
       }}
       by="character"
     >
-      great things coming soon
+      Great things coming soon
     </TextAnimate>
   );
 }

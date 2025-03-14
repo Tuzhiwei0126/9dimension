@@ -52,12 +52,12 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="h-[40rem] overflow-y-auto flex justify-center relative space-x-16 rounded-md p-12"
       ref={ref}>
-      <div className="div relative flex items-start px-4">
-        <div className="max-w-2xl">
+      <div className="div relative flex items-start px-6">
+        <div className="max-w-3xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="my-24">
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -65,7 +65,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-white tracking-tight">
+                className="text-4xl font-extrabold text-zinc-300 tracking-tight leading-tight drop-shadow-md">
                 {item.title}
               </motion.h2>
               <motion.p
@@ -75,18 +75,18 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-base text-slate-200 max-w-sm mt-6 leading-relaxed">
+                className="text-lg text-zinc-400 max-w-md mt-8 leading-relaxed font-medium drop-shadow">
                 {item.description}
               </motion.p>
             </div>
           ))}
-          <div className="h-40" />
+          <div className="h-48" />
         </div>
       </div>
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden shadow-xl",
+          "hidden lg:block h-80 w-96 rounded-lg bg-white sticky top-16 overflow-hidden shadow-2xl border border-white/20",
           contentClassName
         )}>
         {content[activeCard].content ?? null}

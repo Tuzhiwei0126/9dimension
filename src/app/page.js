@@ -51,38 +51,48 @@ const testimonials = [
 ];
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <AnimatedBackground />
-      <div className="flex flex-col justify-center items-center z-10 mt-40">
-  
-        <div className="">
-          <TextAnimateDemo9 />
-          <PlaceholdersAndVanishInputDemo />
+    <div className="flex flex-col min-h-screen snap-y snap-mandatory overflow-y-scroll">
+      <section className="snap-start h-screen w-full flex items-center justify-center relative">
+        <AnimatedBackground />
+        <div className="flex flex-col justify-center items-center z-10 absolute inset-0 flex items-center justify-center">
+          <div className="text-center flex flex-col items-center justify-center gap-6">
+            <TextAnimateDemo9 />
+            <PlaceholdersAndVanishInputDemo />
+          </div>
         </div>
-      </div>
-      <div className="py-10 mt-10">
-        <AnimatedTestimonials testimonials={testimonials} />
-      </div>
-      <div className="py-10 h-screen">
-        <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto">
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
-          <ThreeDCardDemo />
+      </section>
+      
+      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <AnimatedTestimonials testimonials={testimonials} />
         </div>
-      </div>
-      <div className="h-screen py-10">
-        <StickyScrollRevealDemo />
-      </div>
+      </section>
+      
+      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+        <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
+          <ThreeDCardDemo img="/images/product1.JPEG" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security" content="产品1型号参数"/>
+          <ThreeDCardDemo img="/images/product2.JPEG"  title="AI Education All-in-One" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" content="产品2型号参数"/>
+          <ThreeDCardDemo img="/images/product3.JPEG"  title="AI Education All-in-One" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks." content="产品3型号参数"/>
+        </div>
+      </section>
+      
+      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <StickyScrollRevealDemo />
+        </div>
+      </section>
     
-      <div className="h-screen py-10">
-      <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto">
-      <TweetDemo />
-      <TweetDemo />
-      <TweetDemo />
+      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+        <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
+          <TweetDemo id="1899460492999184534" />
+          <TweetDemo id="1899136943348441564" />
+          <TweetDemo id="1899136943348441564" />
         </div>
-
-      </div>
-      <HomeFooter />
+      </section>
+      
+      <section className="snap-start w-full flex items-center justify-center py-10">
+        <HomeFooter />
+      </section>
       {/* <AuroraBackground /> */}
       {/* <BackgroundGradientAnimation /> */}
       {/* <HeroParallax /> */}

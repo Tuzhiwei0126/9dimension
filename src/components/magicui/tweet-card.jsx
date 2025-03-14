@@ -259,7 +259,7 @@ export const MagicTweet = ({
   return (
     <div
       className={cn(
-        "relative flex size-full max-w-lg flex-col gap-2 overflow-hidden rounded-lg border p-4 backdrop-blur-md",
+        "relative flex size-full max-w-lg flex-col bg-white/30 gap-2 overflow-hidden rounded-lg border p-4 backdrop-blur-md",
         className,
       )}
       {...props}
