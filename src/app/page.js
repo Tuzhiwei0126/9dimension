@@ -70,9 +70,9 @@ export default function Home() {
       
       <section className="snap-start h-screen w-full flex items-center justify-center py-10">
         <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
-          <ThreeDCardDemo img="/images/product1.JPEG" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security" content="产品1型号参数"/>
-          <ThreeDCardDemo img="/images/product2.JPEG"  title="AI Education All-in-One" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" content="产品2型号参数"/>
-          <ThreeDCardDemo img="/images/product3.JPEG"  title="AI Education All-in-One" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks." content="产品3型号参数"/>
+          <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security" content="产品1型号参数"/>
+          <ThreeDCardDemo img="/images/product2.png"  title="AI Education All-in-One" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" content="产品2型号参数"/>
+          <ThreeDCardDemo img="/images/product1.png"  title="AI Education All-in-One" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks." content="产品3型号参数"/>
         </div>
       </section>
       
@@ -90,8 +90,32 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="snap-start w-full flex items-center justify-center py-10">
+      <section className="snap-start w-full flex items-center justify-center">
+      {/* <AnimatedBeam /> */}
         <HomeFooter />
+      </section>
+      
+      <section className="snap-start w-full flex items-center justify-center pt-0 pb-10">
+        <div className="w-full max-w-7xl mx-auto px-4 text-center">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-300 text-sm flex-wrap">
+            <div className="flex items-center gap-2">
+              <span className="font-medium">Beijing:</span>
+              <span>2nd Floor, Sohu Network Building, No. 1 Zhongguancun, Haidian District</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-medium">Shanghai:</span>
+              <span>Room 303, Lester School, North Bund, Hongkou District</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-medium">Phone:</span>
+              <a href="tel:+8613911118689" className="hover:text-white transition-colors">+86 139 1111 8689</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-medium">Email:</span>
+              <a href="mailto:fangyi@9dimension.tech" className="hover:text-white transition-colors">fangyi@9dimension.tech</a>
+            </div>
+          </div>
+        </div>
       </section>
       {/* <AuroraBackground /> */}
       {/* <BackgroundGradientAnimation /> */}
