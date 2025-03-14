@@ -54,6 +54,11 @@ export default function Home() {
     <div className="flex flex-col min-h-screen snap-y snap-mandatory overflow-y-scroll">
       <section className="snap-start h-screen w-full flex items-center justify-center relative">
         <AnimatedBackground />
+        <div className="absolute top-4 left-12 z-20">
+          <div className="flex items-center">
+            <Image src="/images/logo.svg" alt="jiuwei Logo" width={120} height={40} />
+          </div>
+        </div>
         <div className="flex flex-col justify-center items-center z-10 absolute inset-0 flex items-center justify-center">
           <div className="text-center flex flex-col items-center justify-center gap-6">
             <TextAnimateDemo9 />
@@ -62,17 +67,17 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+      {/* <section className="snap-start h-screen w-full flex items-center justify-center py-10">
         <div className="w-full max-w-7xl mx-auto px-4">
           <AnimatedTestimonials testimonials={testimonials} />
         </div>
-      </section>
+      </section> */}
       
       <section className="snap-start h-screen w-full flex items-center justify-center py-10">
         <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
-          <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security" content="产品1型号参数"/>
-          <ThreeDCardDemo img="/images/product2.png"  title="AI Education All-in-One" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" content="产品2型号参数"/>
-          <ThreeDCardDemo img="/images/product1.png"  title="AI Education All-in-One" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks." content="产品3型号参数"/>
+          <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
+          <ThreeDCardDemo img="/images/product2.png"  title="SmartEducation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
+          <ThreeDCardDemo img="/images/product1.png"  title="SmartEducation" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
         </div>
       </section>
       
@@ -81,14 +86,21 @@ export default function Home() {
           <StickyScrollRevealDemo />
         </div>
       </section>
-    
+      
       <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <CardHoverEffectDemo />
+
+        </div>
+      </section>
+    
+      {/* <section className="snap-start h-screen w-full flex items-center justify-center py-10">
         <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
           <TweetDemo id="1899460492999184534" />
           <TweetDemo id="1899136943348441564" />
           <TweetDemo id="1899136943348441564" />
         </div>
-      </section>
+      </section> */}
       
       <section className="snap-start w-full flex items-center justify-center">
       {/* <AnimatedBeam /> */}
