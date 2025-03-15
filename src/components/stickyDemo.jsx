@@ -33,7 +33,7 @@ const content = [
       ]
     },
     content: (
-      <div className="h-full w-full flex items-center justify-center text-white rounded-3xl">
+      <div className="h-full w-full  rounded-2xl   flex items-center justify-center text-white rounded-3xl">
         <Image
           src="/images/edu.png"
           width={280}
@@ -71,12 +71,12 @@ const content = [
       ]
     },
     content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="/images/scale.png"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
+          width={280}
+          height={280}
+          className="h-full w-full "
           alt="Smart Scale visualization" />
       </div>
     ),
@@ -116,12 +116,12 @@ const content = [
       ]
     },
     content: (
-      <div className="h-full w-full flex items-center justify-center text-white">
+      <div className="h-full w-full rounded-2xl flex items-center justify-center text-white">
         <Image
           src="/images/sto.png"
-          width={270}
-          height={270}
-          className="h-full w-full object-cover"
+          width={280}
+          height={280}
+          className="h-full w-full rounded-2xl"
           alt="Smart Storage visualization" />
       </div>
     ),

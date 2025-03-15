@@ -13,6 +13,10 @@ module.exports = {
       fontSize: {
         '10xl': '10rem',
         '9xl': '6rem',
+        '5xl': '3rem',
+      },
+      borderRadius: {
+        '4xl': '4rem',
       },
     },
   },
