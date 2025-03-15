@@ -82,7 +82,7 @@ const companyInfo = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen snap-y snap-mandatory overflow-y-scroll">
+    <div className="flex flex-col min-h-screen snap-y mb-20 snap-mandatory overflow-y-scroll">
       <section className="snap-start h-screen w-full flex items-center justify-center relative">
         <AnimatedBackground />
         <div className="absolute top-4 left-12 z-20">
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </section> */}
       
-      <section className="snap-start h-screen w-full flex flex-col items-center justify-center py-10">
+      <section className="snap-start h-screen w-full flex flex-col items-center justify-start pt-16 pb-10">
         <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
           <span className="relative inline-block">
             <span className="relative z-10">Our Products</span>
@@ -112,33 +112,32 @@ export default function Home() {
           </span>
         </h1>
         <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
-          
           <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
           <ThreeDCardDemo img="/images/product2.png"  title="SmartStation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
           <ThreeDCardDemo img="/images/product1.png"  title="SmartScale" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
         </div>
       </section>
       
-      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
+      <section className="snap-start h-screen w-full flex flex-col items-center justify-start pt-16 pb-10">
+        <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
+          <span className="relative inline-block">
+            <span className="relative z-10">Our Solutions</span>
+            <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
+          </span>
+        </h1>
         <div className="w-full max-w-7xl mx-auto px-4">
-          <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
-            <span className="relative inline-block">
-              <span className="relative z-10">Our Solutions</span>
-              <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
-            </span>
-          </h1>
           <StickyScrollRevealDemo />
         </div>
       </section>
       
-      <section className="snap-start h-screen w-full flex items-center justify-center py-10">
-        <div className="w-full max-w-7xl mx-auto px-4">
-          <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
-            <span className="relative inline-block">
-              <span className="relative z-10">Our Partners</span>
-              <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
-            </span>
-          </h1>
+      <section className="snap-start h-screen  w-full flex flex-col items-center justify-start pt-16 pb-10">
+        <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
+          <span className="relative inline-block">
+            <span className="relative z-10">Our Partners</span>
+            <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
+          </span>
+        </h1>
+        <div className="w-full  mt-16 mx-auto px-4">
           <CardHoverEffectDemo />
         </div>
       </section>

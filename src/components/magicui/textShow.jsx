@@ -4,7 +4,7 @@ import { TextAnimate } from "./text-animate";
 
 export function TextAnimateDemo9() {
   return (
-    <div className="flex flex-col items-center mt-60">
+    <div className="flex flex-col items-center mt-70">
       <TextAnimate
         className="text-8xl font-medium flex justify-center items-center h-full z-10 tracking-tighter"
         variants={{
@@ -56,7 +56,7 @@ export function TextAnimateDemo9() {
         Great things coming soon
       </TextAnimate>
       
-      <p className="text-gray-500 mt-6 text-xl tracking-wide">
+      <p className="text-gray-500 mt-20 text-xl tracking-wide">
         敬请期待我们的全新产品与服务
       </p>
     </div>

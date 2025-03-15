@@ -36,7 +36,7 @@ export function PlaceholdersAndVanishInputDemo() {
   return (
     (<div className="h-[40rem] flex flex-col justify-center items-center px-4">
       <h4
-        className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
+        className="mb-10 sm:mb-10 text-xl text-center sm:text-4xl dark:text-white text-black">
         Contact Us for Collaboration ⬇ 
       </h4>
       <PlaceholdersAndVanishInput 
