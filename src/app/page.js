@@ -85,13 +85,13 @@ export default function Home() {
     <div className="flex flex-col min-h-screen snap-y mb-20 snap-mandatory overflow-y-scroll">
       <section className="snap-start h-screen w-full flex items-center justify-center relative">
         <AnimatedBackground />
-        <div className="absolute top-4 left-12 z-20">
+        <div className="absolute top-4 left-4 md:left-12 z-20">
           <div className="flex items-center">
             <Image src="/images/logo.svg" alt="jiuwei Logo" width={120} height={40} />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center z-10 absolute inset-0 flex items-center justify-center">
-          <div className="text-center flex flex-col items-center justify-center gap-6">
+        <div className="flex flex-col justify-center items-center z-10 absolute inset-0">
+          <div className="text-center flex flex-col items-center justify-center gap-4 md:gap-6 px-4">
             <TextAnimateDemo9 />
             <PlaceholdersAndVanishInputDemo />
           </div>
@@ -104,22 +104,22 @@ export default function Home() {
         </div>
       </section> */}
       
-      <section className="snap-start h-screen w-full flex flex-col items-center justify-start pt-16 pb-10">
-        <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
+      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
           <span className="relative inline-block">
             <span className="relative z-10">Our Products</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
           </span>
         </h1>
-        <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 max-w-7xl mx-auto px-4 overflow-x-auto">
           <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
           <ThreeDCardDemo img="/images/product2.png"  title="SmartStation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
           <ThreeDCardDemo img="/images/product1.png"  title="SmartScale" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
         </div>
       </section>
       
-      <section className="snap-start h-screen w-full flex flex-col items-center justify-start pt-16 pb-10">
-        <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
+      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
           <span className="relative inline-block">
             <span className="relative z-10">Our Solutions</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
@@ -130,14 +130,14 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="snap-start h-screen  w-full flex flex-col items-center justify-start pt-16 pb-10">
-        <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
+      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
           <span className="relative inline-block">
             <span className="relative z-10">Our Partners</span>
             <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
           </span>
         </h1>
-        <div className="w-full  mt-16 mx-auto px-4">
+        <div className="w-full mt-8 md:mt-16 mx-auto px-4">
           <CardHoverEffectDemo />
         </div>
       </section>
@@ -156,23 +156,23 @@ export default function Home() {
       </section>
       
       {/* 优化底部区域布局和内容格式 */}
-      <section className="snap-start min-h-screen w-full flex items-center justify-center py-4 relative overflow-hidden">
+      <section className="snap-start min-h-screen w-full flex items-center justify-center py-8 md:py-4 relative overflow-hidden">
         {/* 保持白色30%透明度背景 */}
         <div className="absolute inset-0 bg-white/20 backdrop-filter backdrop-blur-sm z-0"></div>
         <div className="absolute inset-0 z-0">
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
         </div>
         
-        <div className="w-full mx-auto px-8 md:px-12 relative z-10">
-          <div className="mb-10">
-            <h2 className="text-5xl font-bold text-gray-900 mb-10 text-center">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
+          <div className="mb-8 md:mb-10">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 md:mb-10 text-center">
               <span className="relative inline-block">
                 <span className="relative z-10">ABOUT US</span>
                 <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 shadow-md border border-gray-200 hover:border-blue-500/30 transition-all duration-300 flex flex-col h-full">
                 <div className="flex items-center mb-3">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-400/20 flex items-center justify-center border border-blue-500/20">
@@ -218,7 +218,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
-            <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {companyInfo.locations.map((location, index) => (
                 <div key={index} className="bg-white/50 backdrop-blur-md rounded-xl overflow-hidden border border-gray-200 hover:border-blue-500/50 transition-all duration-300 shadow-md h-full">
                   <div className="flex flex-col h-full">
@@ -274,10 +274,10 @@ export default function Home() {
             
             <div className="lg:col-span-3 bg-white/50 backdrop-blur-md rounded-xl p-5 border border-gray-200 shadow-md flex flex-col justify-center">
               <h3 className="text-lg font-bold text-gray-900 mb-5 text-center">FOLLOW US</h3>
-              <div className="flex justify-center gap-8">
+              <div className="flex justify-center gap-4 md:gap-8">
                 {companyInfo.qrCodes.map((qrCode, index) => (
                   <div key={index} className="flex flex-col items-center">
-                    <div className="w-24 h-24 mb-2 p-1 bg-white rounded-lg shadow-sm">
+                    <div className="w-20 h-20 md:w-24 md:h-24 mb-2 p-1 bg-white rounded-lg shadow-sm">
                       <Image 
                         src={qrCode.image} 
                         alt={qrCode.name} 
@@ -286,7 +286,7 @@ export default function Home() {
                         className="w-full h-full"
                       />
                     </div>
-                    <p className="text-sm font-medium text-gray-900">{qrCode.name}</p>
+                    <p className="text-xs md:text-sm font-medium text-gray-900">{qrCode.name}</p>
                   </div>
                 ))}
               </div>
