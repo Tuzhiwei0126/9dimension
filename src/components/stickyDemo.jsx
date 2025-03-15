@@ -5,54 +5,129 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    title: "Smart Education",
+    description: {
+      sections: [
+        {
+          title: "University AI Course Practice",
+          points: [
+            "Students access computing power directly through web interface, no local setup required",
+            "Provides image classification, NLP and other teaching templates to lower learning barriers"
+          ]
+        },
+        {
+          title: "Multi-GPU Training",
+          points: [
+            "Life science protein structure prediction models achieve 40% faster convergence",
+            "Shared environment repository improves collaboration efficiency by 60%"
+          ]
+        },
+        {
+          title: "Flexible Computing Resources",
+          points: [
+            "Computational physics coursework supports MPI parallel framework",
+            "Students can submit assignments online and view real-time logs",
+            "Elastic computing power guarantees peak demand without hardware procurement pressure"
+          ]
+        }
+      ]
+    },
     content: (
-      <div
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+      <div className="h-full w-full flex items-center justify-center text-white rounded-3xl">
+        <Image
+          src="/images/edu.png"
+          width={280}
+          height={280}
+          className="h-full w-full rounded-2xl"
+          alt="Smart Education visualization" />
       </div>
     ),
   },
   {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    title: "Smart Scale",
+    description: {
+      sections: [
+        {
+          title: "Dense Computing Power",
+          points: [
+            "Computing density reaches 1.5 PFLOPS per cabinet, 7x improvement over traditional solutions",
+            "Extreme efficiency of 300 FLOPS/WATT, 6x better than conventional approaches"
+          ]
+        },
+        {
+          title: "Ultra-Fast Response",
+          points: [
+            "Second-level task response time",
+            "Revolutionary breakthrough compared to minute-level responses in traditional systems"
+          ]
+        },
+        {
+          title: "Scalable Architecture",
+          points: [
+            "Seamless scaling from small deployments to massive clusters",
+            "Intelligent resource allocation optimizes utilization across workloads"
+          ]
+        }
+      ]
+    },
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src="/images/scale.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="linear board demo" />
+          alt="Smart Scale visualization" />
       </div>
     ),
   },
   {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    title: "Smart Storage",
+    description: {
+      sections: [
+        {
+          title: "AI & Machine Learning",
+          points: [
+            "Model training and inference optimization",
+            "PB-level dataset storage with GPU acceleration"
+          ]
+        },
+        {
+          title: "High-Performance Computing",
+          points: [
+            "Supercomputing center parallel I/O support",
+            "Handles tens of thousands of concurrent file accesses"
+          ]
+        },
+        {
+          title: "Financial Services",
+          points: [
+            "Real-time trading and risk control analysis",
+            "Highly reliable storage architecture meeting compliance requirements"
+          ]
+        },
+        {
+          title: "Media & Entertainment",
+          points: [
+            "4K/8K video rendering and streaming",
+            "High throughput with multi-tenant isolation"
+          ]
+        }
+      ]
+    },
     content: (
-      <div
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
-      </div>
-    ),
-  },
-  {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div
-        className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+      <div className="h-full w-full flex items-center justify-center text-white">
+        <Image
+          src="/images/sto.png"
+          width={270}
+          height={270}
+          className="h-full w-full object-cover"
+          alt="Smart Storage visualization" />
       </div>
     ),
   },
 ];
+
 export function StickyScrollRevealDemo() {
   return (
     (<div className="p-10">

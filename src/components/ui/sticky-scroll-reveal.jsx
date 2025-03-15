@@ -47,6 +47,31 @@ export const StickyScroll = ({
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
   }, [activeCard]);
 
+  const renderDescription = (description) => {
+    if (typeof description === 'string') {
+      return <p>{description}</p>;
+    }
+    
+    if (description.sections) {
+      return (
+        <div className="description-sections">
+          {description.sections.map((section, idx) => (
+            <div key={idx} className="mb-4">
+              <h3 className="text-lg font-bold mb-2">{section.title}</h3>
+              <ul className="list-disc pl-5">
+                {section.points.map((point, pidx) => (
+                  <li key={pidx} className="mb-1">{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    
+    return null;
+  };
+
   return (
     <motion.div
       animate={{
@@ -68,7 +93,7 @@ export const StickyScroll = ({
                 className="text-4xl font-extrabold text-zinc-300 tracking-tight leading-tight drop-shadow-md">
                 {item.title}
               </motion.h2>
-              <motion.p
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -76,8 +101,8 @@ export const StickyScroll = ({
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
                 className="text-lg text-zinc-400 max-w-md mt-8 leading-relaxed font-medium drop-shadow">
-                {item.description}
-              </motion.p>
+                {renderDescription(item.description)}
+              </motion.div>
             </div>
           ))}
           <div className="h-48" />
