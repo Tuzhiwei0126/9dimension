@@ -295,7 +295,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-300/50 pt-6 mt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-center mx-auto">
               <div className="flex items-center mb-4 md:mb-0">
                 <Image src="/images/logo.svg" alt="jiuwei Logo" width={90} height={30} />
                 <span className="ml-3 text-gray-600 text-sm">© {new Date().getFullYear()} Jiuwei Technology. All rights reserved.</span>
