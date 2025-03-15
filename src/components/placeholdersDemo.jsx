@@ -35,10 +35,10 @@ export function PlaceholdersAndVanishInputDemo() {
   
   return (
     (<div className="h-[40rem] flex flex-col justify-center items-center px-4">
-      <h2
+      <h4
         className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
-        Contact Us for Collaboration
-      </h2>
+        Contact Us for Collaboration ⬇ 
+      </h4>
       <PlaceholdersAndVanishInput 
         placeholders={placeholders} 
         onChange={handleChange} 
