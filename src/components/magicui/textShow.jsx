@@ -57,7 +57,7 @@ export function TextAnimateDemo9() {
       </TextAnimate>
       
       <p className="text-gray-500 mt-20 text-xl tracking-wide">
-        敬请期待我们的全新产品与服务
+      Coming soon: our exciting new products and services
       </p>
     </div>
   );
