@@ -45,7 +45,7 @@ export function HoverEffect({ items, className, showOnlyIcons = false }) {
               <img 
                 src={item.icon} 
                 alt="合作伙伴" 
-                className="max-h-24 max-w-24 w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
+                className="max-h-50 max-w-50 w-full h-full object-contain transition-all duration-300 group-hover:scale-110"
               />
             )}
           </div>

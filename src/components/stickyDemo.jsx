@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Smart Education",
+    title: "SmartStation",
     description: {
       sections: [
         {
@@ -44,7 +44,7 @@ const content = [
     ),
   },
   {
-    title: "Smart Scale",
+    title: "SmartScale",
     description: {
       sections: [
         {
@@ -82,7 +82,7 @@ const content = [
     ),
   },
   {
-    title: "Smart Storage",
+    title: "SmartStorage",
     description: {
       sections: [
         {

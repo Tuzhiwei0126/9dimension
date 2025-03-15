@@ -76,8 +76,8 @@ export default function Home() {
       <section className="snap-start h-screen w-full flex items-center justify-center py-10">
         <div className="flex flex-row justify-center items-center gap-8 max-w-7xl mx-auto px-4">
           <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
-          <ThreeDCardDemo img="/images/product2.png"  title="SmartEducation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
-          <ThreeDCardDemo img="/images/product1.png"  title="SmartEducation" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
+          <ThreeDCardDemo img="/images/product2.png"  title="SmartStation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
+          <ThreeDCardDemo img="/images/product1.png"  title="SmartScale" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
         </div>
       </section>
       
