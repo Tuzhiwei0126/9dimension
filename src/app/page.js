@@ -66,7 +66,7 @@ const companyInfo = {
   ],
   contact: {
     phone: "+86 139 1111 8689",
-    email: "fangyi@9dimension.tech"
+    email: "support@9dimension.tech"
   },
   qrCodes: [
     {

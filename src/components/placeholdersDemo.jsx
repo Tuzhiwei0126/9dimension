@@ -23,7 +23,7 @@ export function PlaceholdersAndVanishInputDemo() {
     e.preventDefault();
     const subject = encodeURIComponent("网站咨询");
     const body = encodeURIComponent(`我想了解更多关于: ${inputValue}`);
-    const mailtoLink = `mailto:fangyi@9dimension.tech?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:support@9dimension.tech?subject=${subject}&body=${body}`;
       
     // 打开邮件客户端
     window.location.href = mailtoLink;
