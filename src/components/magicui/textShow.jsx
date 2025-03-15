@@ -6,7 +6,7 @@ export function TextAnimateDemo9() {
   return (
     <div className="flex flex-col items-center mt-70">
       <TextAnimate
-        className="text-8xl font-medium flex justify-center items-center h-full z-10 tracking-tighter"
+        className="text-9xl font-medium flex justify-center items-center h-full z-10 tracking-tighter"
         variants={{
           hidden: {
             opacity: 0,
@@ -57,7 +57,7 @@ export function TextAnimateDemo9() {
       </TextAnimate>
       
       <p className="text-gray-500 mt-20 text-xl tracking-wide">
-      Coming soon: our exciting new products and services
+      our exciting new products and services
       </p>
     </div>
   );

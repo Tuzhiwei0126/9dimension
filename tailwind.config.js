@@ -9,7 +9,12 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
-    // rest of the code
+    extend: {
+      fontSize: {
+        '10xl': '10rem',
+        '9xl': '6rem',
+      },
+    },
   },
   plugins: [
     // rest of the code
