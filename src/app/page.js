@@ -91,7 +91,7 @@ export default function Home() {
             <Image src="/images/logo.svg" alt="jiuwei Logo" width={120} height={40} />
           </div>
         </div>
-        <div className="flex-1 flex flex-col justify-center items-center z-10 mt-20">
+        <div className="flex-1 flex flex-col justify-center items-center z-10 mt-10">
           <div className="text-center flex flex-col items-center justify-center gap-4 md:gap-6 px-4 max-w-4xl mx-auto">
             <TextAnimateDemo9 />
             <PlaceholdersAndVanishInputDemo />

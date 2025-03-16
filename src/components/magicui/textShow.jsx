@@ -107,7 +107,7 @@ export function TextAnimateDemo9() {
       </TextAnimate>
   
       
-      <p className="text-gray-500 mt-8 md:mt-16 text-lg md:text-xl tracking-wide max-w-2xl text-center px-4">
+      <p className="text-gray-500 mt-6 md:mt-16 text-lg md:text-xl tracking-wide max-w-2xl text-center px-4">
         our exciting new products and services
       </p>
     </div>
