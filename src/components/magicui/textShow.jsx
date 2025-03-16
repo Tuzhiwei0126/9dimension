@@ -4,9 +4,9 @@ import { TextAnimate } from "./text-animate";
 
 export function TextAnimateDemo9() {
   return (
-    <div className="flex flex-col items-center mt-70">
+    <div className="flex flex-col items-center justify-center h-full py-10 md:py-16">
       <TextAnimate
-        className="text-9xl font-medium flex justify-center items-center h-full z-10 tracking-tighter"
+        className="text-7xl md:text-9xl font-medium flex flex-wrap justify-center items-center z-10 tracking-tighter"
         variants={{
           hidden: {
             opacity: 0,
@@ -56,8 +56,8 @@ export function TextAnimateDemo9() {
         Great things coming soon
       </TextAnimate>
       
-      <p className="text-gray-500 mt-20 text-xl tracking-wide">
-      our exciting new products and services
+      <p className="text-gray-500 mt-8 md:mt-16 text-lg md:text-xl tracking-wide max-w-2xl text-center px-4">
+        our exciting new products and services
       </p>
     </div>
   );

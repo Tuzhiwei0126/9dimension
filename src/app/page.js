@@ -82,8 +82,8 @@ const companyInfo = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen snap-y mb-20 snap-mandatory overflow-y-scroll">
-      <section className="snap-start h-screen w-full flex items-center justify-center relative">
+    <div className="flex flex-col min-h-screen snap-y mb-0 snap-mandatory overflow-y-scroll">
+      <section className="snap-start min-h-[90vh] h-auto w-full flex items-center justify-center relative py-16">
         <AnimatedBackground />
         <div className="absolute top-4 left-4 md:left-12 z-20">
           <div className="flex items-center">
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center z-10 absolute inset-0">
-          <div className="text-center flex flex-col items-center justify-center gap-4 md:gap-6 px-4">
+          <div className="text-center flex flex-col items-center justify-center gap-4 md:gap-6 px-4 max-w-4xl mx-auto">
             <TextAnimateDemo9 />
             <PlaceholdersAndVanishInputDemo />
           </div>
@@ -104,41 +104,47 @@ export default function Home() {
         </div>
       </section> */}
       
-      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
-          <span className="relative inline-block">
-            <span className="relative z-10">Our Products</span>
-            <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
-          </span>
-        </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 max-w-7xl mx-auto px-4 overflow-x-auto">
-          <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
-          <ThreeDCardDemo img="/images/product2.png"  title="SmartStation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
-          <ThreeDCardDemo img="/images/product1.png"  title="SmartScale" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
+      <section className="snap-start min-h-[90vh] h-auto w-full flex flex-col items-center justify-center py-12 md:py-16">
+        <div className="container mx-auto px-4 max-w-7xl flex flex-col h-full justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+            <span className="relative inline-block">
+              <span className="relative z-10">Our Products</span>
+              <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
+            </span>
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
+            <ThreeDCardDemo img="/images/product3.png" title="SmartStorage" description="AI/HPC-optimized storage with extreme performance, limitless scalability, and financial-grade security"/>
+            <ThreeDCardDemo img="/images/product2.png" title="SmartStation" description="Integrated AI+HPC platform for universities, empowering teaching and research with smart resource orchestration" />
+            <ThreeDCardDemo img="/images/product1.png" title="SmartScale" description="Expert solutions optimizing storage and AI training efficiency to overcome performance bottlenecks."/>
+          </div>
         </div>
       </section>
       
-      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
-          <span className="relative inline-block">
-            <span className="relative z-10">Our Solutions</span>
-            <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
-          </span>
-        </h1>
-        <div className="w-full max-w-7xl mx-auto px-4">
-          <StickyScrollRevealDemo />
+      <section className="snap-start min-h-[90vh] h-auto w-full flex flex-col items-center justify-center py-12 md:py-16">
+        <div className="container mx-auto px-4 max-w-7xl flex flex-col h-full justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+            <span className="relative inline-block">
+              <span className="relative z-10">Our Solutions</span>
+              <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
+            </span>
+          </h1>
+          <div className="h-[65vh] md:h-[60vh]">
+            <StickyScrollRevealDemo />
+          </div>
         </div>
       </section>
       
-      <section className="snap-start min-h-screen w-full flex flex-col items-center justify-start pt-12 md:pt-16 pb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center px-4">
-          <span className="relative inline-block">
-            <span className="relative z-10">Our Partners</span>
-            <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
-          </span>
-        </h1>
-        <div className="w-full mt-8 md:mt-16 mx-auto px-4">
-          <CardHoverEffectDemo />
+      <section className="snap-start min-h-[90vh] h-auto w-full flex flex-col items-center justify-center py-12 md:py-16">
+        <div className="container mx-auto px-4 max-w-7xl flex flex-col h-full justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 text-center">
+            <span className="relative inline-block">
+              <span className="relative z-10">Our Partners</span>
+              <span className="absolute bottom-1 left-0 w-full h-3 bg-blue-200/50 -z-10 transform -rotate-1"></span>
+            </span>
+          </h1>
+          <div className="mt-8 md:mt-16">
+            <CardHoverEffectDemo />
+          </div>
         </div>
       </section>
     
@@ -156,14 +162,14 @@ export default function Home() {
       </section>
       
       {/* 优化底部区域布局和内容格式 */}
-      <section className="snap-start min-h-screen w-full flex items-center justify-center py-8 md:py-4 relative overflow-hidden">
+      <section className="snap-start min-h-[90vh] h-auto w-full flex items-center justify-center py-12 md:py-16 relative overflow-hidden">
         {/* 保持白色30%透明度背景 */}
         <div className="absolute inset-0 bg-white/20 backdrop-filter backdrop-blur-sm z-0"></div>
         <div className="absolute inset-0 z-0">
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent"></div>
         </div>
         
-        <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl h-full flex flex-col justify-center py-8">
           <div className="mb-8 md:mb-10">
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 md:mb-10 text-center">
               <span className="relative inline-block">
@@ -175,7 +181,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 shadow-md border border-gray-200 hover:border-blue-500/30 transition-all duration-300 flex flex-col h-full">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-400/20 flex items-center justify-center border border-blue-500/20">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-400/20 flex items-center justify-center border border-blue-500/20 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
@@ -189,7 +195,7 @@ export default function Home() {
               
               <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 shadow-md border border-gray-200 hover:border-purple-500/30 transition-all duration-300 flex flex-col h-full">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600/20 to-purple-400/20 flex items-center justify-center border border-purple-500/20">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600/20 to-purple-400/20 flex items-center justify-center border border-purple-500/20 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                     </svg>
@@ -203,7 +209,7 @@ export default function Home() {
               
               <div className="bg-white/40 backdrop-blur-sm rounded-xl p-4 shadow-md border border-gray-200 hover:border-cyan-500/30 transition-all duration-300 flex flex-col h-full">
                 <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-600/20 to-cyan-400/20 flex items-center justify-center border border-cyan-500/20">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-600/20 to-cyan-400/20 flex items-center justify-center border border-cyan-500/20 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -244,7 +250,7 @@ export default function Home() {
               <h3 className="text-lg font-bold text-gray-900 mb-5 text-center">CONTACT US</h3>
               <div className="space-y-5">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-400/20 flex items-center justify-center mr-4 border border-blue-500/20">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-400/20 flex items-center justify-center mr-4 border border-blue-500/20 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
@@ -257,7 +263,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600/20 to-purple-400/20 flex items-center justify-center mr-4 border border-purple-500/20">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600/20 to-purple-400/20 flex items-center justify-center mr-4 border border-purple-500/20 flex-shrink-0">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -293,8 +299,8 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="border-t border-gray-300/50 pt-6 mt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center mx-auto">
+          <div className="border-t border-gray-300/50 pt-6 mt-auto">
+            <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-4 md:mb-0">
                 <Image src="/images/logo.svg" alt="jiuwei Logo" width={90} height={30} />
                 <span className="ml-3 text-gray-600 text-sm">© {new Date().getFullYear()} Jiuwei Technology. All rights reserved.</span>

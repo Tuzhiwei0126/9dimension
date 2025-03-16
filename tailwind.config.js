@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       fontSize: {
         '10xl': '10rem',
-        '9xl': '6rem',
+        '9xl': '4rem',
         '5xl': '3rem',
       },
       borderRadius: {
