@@ -86,9 +86,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
         <AnimatedBackground />
-        <div className="absolute top-4 left-4 md:left-12 z-20">
+        <div className="absolute top-4 left-1/2 md:left-1/2 transform -translate-x-1/2 z-20">
           <div className="flex items-center">
-            <Image src="/images/logo.svg" alt="jiuwei Logo" width={120} height={40} />
+            {/* <Image src="/images/logo.svg" alt="jiuwei Logo" width={120} height={40} /> */}
+            <Image src="/images/Group.svg" alt="jiuwei Logo" width={120} height={40} />
           </div>
         </div>
         <div className="flex-1 flex flex-col justify-center items-center z-10 mt-10">
